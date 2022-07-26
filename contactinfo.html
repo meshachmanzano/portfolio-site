@@ -1,56 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <title>Contact Information</title>
+    <title>Meshach's Portfolio</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/74ae88ea8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles-large-mobile.css">
+    <link rel="stylesheet" href="styles/styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles-laptop.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
+
 </head>
 
-
 <body>
+    <div class="blur-zone"></div>
     <header>
         <nav>
-            <div id="left_header">
-
-                <h1>Contact Information</h1>
+            <div class="left-header fade-2-5">
+                <a href="indexccsframework.html"><img src="img/mlogo.jpeg" alt="meshach" id="logo"></a>
             </div>
-            <div id="header_links">
-                <a href="about.html">about</a>
-                |
-                <a href="FAQs.html">questions</a>
-                |
-                <a href="qualifications.html">qualifications</a>
-                |
-                <a href="indexccsframework.html">portfolio</a>
-                |
-                <a href="hobbies.html">hobbies</a>
+            <div class="hamburger-parent">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <input type="checkbox" class="menu-switch">
+            <div class="header_links">
+                <ul class="nav-header fade-2-5">
+                    <li><a href="about.html" class="burger-font-size">about</a></li>
+                    <li><a href="FAQs.html" class="burger-font-size">questions</a></li>
+                    <li><a href="qualifications.html" class="burger-font-size">qualifications</a></li>
+                    <li><a href="contactinfo.html" class="burger-font-size">contact</a></li>
+                    <li><a href="hobbies.html" class="burger-font-size">hobbies</a></li>
+                </ul>
+
             </div>
 
         </nav>
     </header>
-    <main>
-        <div class="flex-12">
-            <p>Email: meshachmanzano@gmail.com</p>
-            <p>Mobile: 07772623900</p>
-            <p>Linkedin: <a href="https://gb.linkedin.com/" target="_blank">Meshach Manzano</a></p>
+
+    <main id="contact">
+        <div class="contact-items">
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><i class="fa-solid fa-mobile-button fa-5x"></i></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>07772623900</h2>
+                        <h2>02084595158</h2>
+                        <h2>01234567890</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><i class="fa-solid fa-envelope fa-5x"></i></i></div>
+                <div class="contact-info">
+                    <h1>Email</h1>
+                    <h2>meshachmanzano@gmail.com</h2>
+                    <h2>meshachman@aol.com</h2>
+                    <h2>crookedcoder@hack.com</h2>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="icon"><i class="fa-solid fa-location-dot fa-5x"></i></i></div>
+                <div class="contact-info">
+                    <h1>Address</h1>
+                    <h2>Willesden</h2>
+                    <h2>London</h2>
+                    <h2>United Kingdom</h2>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <nav>
-            <div id="left_footer">
-                <a href="copyright.html">copyright</a>
-            </div>
-            <div id="right_footer">
-                <a href="privacy_notice.html">privacy notice</a>
-                |
-                <a href="terms_and_conditions.html">terms and conditions</a>
-            </div>
-        </nav>
+        <ul class="nav-footer fade-2-5">
+            <li> <a href="copyright.html">copyright</a></li>
+
+            <li><a href="privacy_notice.html">privacy notice</a></li>
+            <li><a href="terms_and_conditions.html">terms and conditions</a></li>
+        </ul>
     </footer>
+
+
+    <script src="index.js"></script>
+
 
 </body>

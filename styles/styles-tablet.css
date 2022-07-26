@@ -1,0 +1,75 @@
+@media (min-width: 768px) {
+    
+    .main-title {
+        font-size: 36px;
+    }
+    
+    .image-wrapper {
+        min-height: 50vh;
+    }
+    
+    .flex-md-12 {
+        width: 100%;
+    
+    }
+
+    .flex-md-6 {
+        width: 50%;
+    }
+    
+    .flex-md-4 {
+        width: 33%;
+    }
+    
+    .flex-md-3 {
+        width: 25%;
+    }
+    
+    .flex-md-1 {
+        width: 16.6%;
+    }
+
+    .font-md-medium {
+        font-size: 1.3rem;
+    }
+    
+    .font-md-title {
+        font-size: 6rem;
+    }
+
+    .mycv-md-1 {
+        font-size: 140px;
+        font-family: 'IBM Plex Mono', monospace;
+        color: white;
+    }
+
+    #left_footer {
+        padding: 0 0 0 70px;
+    }
+
+    .nav-footer {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+        padding: 20px 0;
+    }
+
+    #contact .contact-item {
+        width: 84%;
+    }
+
+    
+    .burger-font-size {
+        font-size: 2em;
+    }
+
+
+
+    #contact .contact-info h2 {
+        font-size: 25px;
+    }
+
+    .myphoto-cv {
+        min-height: calc(100vh - 13rem);
+    }
+}

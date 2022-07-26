@@ -2,118 +2,206 @@
 
 <head>
     <title>Meshach's Portfolio</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles-large-mobile.css">
+    <link rel="stylesheet" href="styles/styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles-laptop.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css">
+
+
 </head>
+
 
 <body>
     <header>
         <nav>
-            <div id="left_header">
-                <img src="img/mlogo.png" alt="meshach" id="logo">
-
-                <h1>Meshach's Portfolio</h1>
+            <div class="left-header fade-2-5">
+                <a href="indexccsframework.html"><img src="img/mlogo.jpeg" alt="meshach" id="logo"></a>
             </div>
-            <div id="header_links">
-                <a href="about.html">about</a>
-                |
-                <a href="FAQs.html">questions</a>
-                |
-                <a href="qualifications.html">qualifications</a>
-                |
-                <a href="contactinfo.html">contact</a>
-                |
-                <a href="indexccsframework.html">portfolio</a>
+            <div class="hamburger-parent">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <input type="checkbox" class="menu-switch">
+            <div class="header_links">
+                <ul class="nav-header fade-2-5">
+                    <li><a href="about.html" class="burger-font-size">about</a></li>
+                    <li><a href="FAQs.html" class="burger-font-size">questions</a></li>
+                    <li><a href="qualifications.html" class="burger-font-size">qualifications</a></li>
+                    <li><a href="contactinfo.html" class="burger-font-size">contact</a></li>
+                    <li><a href="hobbies.html" class="burger-font-size">hobbies</a></li>
+                </ul>
+
             </div>
 
         </nav>
     </header>
-   <main>
-    <div id="hobbies_tables">
-    <div class="table-container" role="table" aria-label="Destinations">
-        <div class="flex" role="rowgroup">
-            <div class="flex-3" role="columnheader" style="background-color: blue;"></div>
-            <div class="flex-3" role="columnheader" style="background-color: blueviolet">hobby</div>
-            <div class="flex-3" role="columnheader" style="background-color: rgb(14, 111, 177)">what I love about it
-            </div>
-            <div class="flex-3" role="columnheader" style="background-color: rgb(15, 163, 163)">my experience</div>
-        </div>
-        <div class="flex" role="rowgroup">
-            <div class="flex-3" role="cell"><img src="img/soccer.jpg" alt="football"></div>
-            <div class="flex-3" role="cell">football</div>
-            <div class="flex-3" role="cell">
-                <ul>
-                    <li>Coaching</li>
-                    <li>Manging</li>
-                    <li>Playing</li>
-                </ul>
-            </div>
-            <div class="flex-3" role="cell">10 years experience</div>
-        </div>
-        <div class="flex" role="rowgroup">
-            <div class="flex-3" role="cell"><img src="img/code.jpg" alt="coding"></div>
-            <div class="flex-3" role="cell">coding</div>
-            <div class="flex-3" role="cell">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="flex-3" role="cell">3 days and growing</div>
-        </div>
-        <div class="flex" role="rowgroup">
-            <div class="flex-3" role="cell"><img src="img/running.jpg" alt="running"></div>
-            <div class="flex-3" role="cell">running</div>
-            <div class="flex-3" role="cell">
-                <ul>
-                    <li>Marathons</li>
-                    <li>Fitness</li>
-                    <li>Exercise</li>
-                </ul>
-            </div>
-            <div class="flex-3" role="cell">10 years experience</div>
-        </div>
-        <div class="flex" role="rowgroup">
-            <div class="flex-3" role="cell"><img src="img/traveling.jpg" alt="boat_water"></div>
-            <div class="flex-3" role="cell">travelling</div>
-            <div class="flex-3" role="cell">
-                <ul>
-                    <li>Cultures</li>
-                    <li>Food</li>
-                    <li>Nature</li>
-                </ul>
-            </div>
-            <div class="flex-3" role="cell">20 years experience</div>
-        </div>
-        <div class="flex" role="rowgroup">
-            <div class="flex-3" role="cell"><img src="img/drama.jpg" alt="stage"></div>
-            <div class="flex-3" role="cell">theatre</div>
-            <div class="flex-3" role="cell">
-                <ul>
-                    <li>Acting</li>
-                    <li>Directing</li>
-                    <li>Producing</li>
-                </ul>
-            </div>
-            <div class="flex-3" role="cell">20 years experience</div>
-        </div>
-    </div>
-</main>
-    <footer>
-        <nav>
-            <div id="left_footer">
-                <a href="copyright.html">copyright</a>
-            </div>
-            <div id="right_footer">
-                <a href="privacy_notice.html">privacy notice</a>
-                |
-                <a href="terms_and_conditions.html">terms and conditions</a>
-            </div>
 
-        </nav>
+    <main>
+
+
+
+
+
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="hobby-container football">
+                            <h1 class="hobby-font font-title font-md-title font-lg-title font-xl-title" data-hobby="football-hobby">Football</h1>
+                            <section class="hidden-section hobby-section font-medium font-md-medium font-lg-medium">
+                                <div class="flex-lg-9">
+                                    <p>Football, commonly known as the beautiful game. As a typical lad born in London,
+                                        football has been a constant part of my life (As a result I'm a die hard Chelsea
+                                        fan), a sport that has been a part of my
+                                        life from the moment I could walk and somthing that has taught me many values.
+                                    </p>
+                                </div>
+                                <div class="flex-lg-3">
+                                    <ul>
+                                        <li>Comradery</li>
+                                        <li>Cooporation</li>
+                                        <li>Discapline</li>
+                                        <li>Competitiveness</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div class="color-overlay-1"></div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="hobby-container coding">
+                            <h1 class="hobby-font font-title font-md-title font-lg-title font-xl-title"  data-hobby="coding-hobby">Coding</h1>
+                            <section class="hidden-section hobby-section font-medium font-md-medium font-lg-medium">
+                                <div class="flex-lg-9">
+                                    <p>Coding is something of a new passion. At first it was just a curiosity developed
+                                        while searching for a career in IT. However after a few weeks of lessons and
+                                        independant research the endless possibilities, opportunities and significance
+                                        that coding provides, its has become something i passionately want to make a
+                                        career of!</p>
+                                </div>
+                                <div class="flex-lg-3">
+                                    <ul>
+                                        <li>Analysing</li>
+                                        <li>Attentiveness</li>
+                                        <li>Resourcfulness</li>
+                                        <li>Patience</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div class="color-overlay-2"></div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="hobby-container running">
+                            <h1 class="hobby-font font-title font-md-title font-lg-title font-xl-title"  data-hobby="running-hobby">Running</h1>
+                            <section class="hidden-section hobby-section font-medium font-md-medium font-lg-medium">
+                                <div class="flex-lg-9">
+                                    <p>Running became a routine for after football slowed down. Something that i do not
+                                        only to keep my fitness but also finnd it extremely theraputic and i good
+                                        opportuinity to process. As socitey develops, mental health is becoming a more
+                                        pressing issue (especially with the years of lockdown due to covid) and i find
+                                        running/walking an excellent activity to help with that.</p>
+                                </div>
+                                <div class="flex-lg-3">
+                                    <ul>
+                                        <li>Perseverance</li>
+                                        <li>Pacing</li>
+                                        <li>Routine</li>
+                                        <li>Preperation</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div class="color-overlay-1"></div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="hobby-container acting">
+                            <h1 class="hobby-font font-title font-md-title font-lg-title font-xl-title"  data-hobby="acting-hobby">Acting</h1>
+                            <section class="hidden-section hobby-section font-medium font-md-medium font-lg-medium">
+                                <div class="flex-lg-9">
+                                    <p>Acting was technically my second hobby after football. Whether it was community
+                                        plays, lessons at the local theatre or universitiy work the art of acting was
+                                        something I was always devoted to. Due to many years of experience I've come to
+                                        realise alot of the skills i learnt during that time were transferable to many
+                                        ofther aspects of my life. </p>
+                                </div>
+                                <div class="flex-lg-3">
+                                    <ul>
+                                        <li>Creative</li>
+                                        <li>Public Speaking</li>
+                                        <li>Relationships</li>
+                                        <li>Improvisation</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div class="color-overlay-2"></div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="hobby-container travelling">
+                            <h1 class="hobby-font font-title font-md-title font-lg-title font-xl-title"  data-hobby="travelling-hobby">Travelling</h1>
+                            <section class="hidden-section hobby-section font-medium font-md-medium font-lg-medium">
+                                <div class="flex-lg-9">
+                                    <p>Due to a very fortunate upbringing i have had the luck opportuinity of being able
+                                        to travel the world from a very young age. From India to Kenya to Jamaica to
+                                        America, I have been privelleged to experience an array of different cultures.
+                                    </p>
+                                </div>
+                                <div class="flex-lg-3">
+                                    <ul>
+                                        <li>Inclusivity</li>
+                                        <li>Humility</li>
+                                        <li>Optimistic</li>
+                                        <li>Daring</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <div class="color-overlay-1"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="nav-footer fade-2-5">
+            <li> <a href="copyright.html">copyright</a></li>
+
+            <li><a href="privacy_notice.html">privacy notice</a></li>
+            <li><a href="terms_and_conditions.html">terms and conditions</a></li>
+        </ul>
     </footer>
+    <script src="index.js"></script>
+    <script>
+        new Splide('.splide', {
+            type: "loop",
+            speed: 1000,
+            easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+            autoplay: true,
+            interval: number = 4000
+
+        }).mount();
+    </script>
 </body>

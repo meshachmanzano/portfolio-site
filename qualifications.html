@@ -1,52 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <title>Qualifications</title>
+    <title>Meshach's Portfolio</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/74ae88ea8d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles-large-mobile.css">
+    <link rel="stylesheet" href="styles/styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles-laptop.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
 </head>
 
-
 <body>
+    <div class="blur-zone"></div>
     <header>
         <nav>
-            <div id="left_header">
-
-                <h1>Qualifications</h1>
+            <div class="left-header fade-2-5">
+                <a href="indexccsframework.html"><img src="img/mlogo.jpeg" alt="meshach" id="logo"></a>
             </div>
-            <div id="header_links">
-                <a href="about.html">about</a>
-                |
-                <a href="FAQs.html">questions</a>
-                |
-                <a href="contactinfo.html">contact</a>
-                |
-                <a href="indexccsframework.html">portfolio</a>
-                |
-                <a href="hobbies.html">hobbies</a>
+            <div class="hamburger-parent">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <input type="checkbox" class="menu-switch">
+            <div class="header_links">
+                <ul class="nav-header fade-2-5">
+                    <li><a href="about.html" class="burger-font-size">about</a></li>
+                    <li><a href="FAQs.html" class="burger-font-size">questions</a></li>
+                    <li><a href="qualifications.html" class="burger-font-size">qualifications</a></li>
+                    <li><a href="contactinfo.html" class="burger-font-size">contact</a></li>
+                    <li><a href="hobbies.html" class="burger-font-size">hobbies</a></li>
+                </ul>
+
             </div>
 
         </nav>
     </header>
-    <p>Email: meshachmanzano@gmail.com</p>
-    <p>Mobile: 07772623900</p>
-    <p>Linkedin: <a href="https://gb.linkedin.com/" target="_blank">Meshach Manzano</a></p>
+    <main id="skills">
+        <div class="skills container">
+            <div class="skills-top">
+                <h1>Skills</h1>
+            </div>
+            <div class="skills-bottom">
+                <div class="skills-item">
+                    <div class="icons"><i class="fa-brands fa-html5 fa-4x"></i></div>
+                    <h2>HTML</h2>
+                    <p>HTML, in full hypertext markup language, a formatting system for displaying material retrieved
+                        over the Internet. Each retrieval unit is known as a Web page (from World Wide Web), and such
+                        pages frequently contain hypertext links that allow related pages to be retrieved.</p>
+                </div>
+                <div class="skills-item">
+                    <div class="icons"><i class="fa-brands fa-css3-alt fa-4x"></i></div>
+                    <h2>CSS</h2>
+                    <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and
+                        fonts. It allows one to adapt the presentation to different types of devices, such as large
+                        screens, small screens, or printers. CSS is independent of HTML and can be used with any
+                        XML-based markup language.</p>
+                </div>
+                <div class="skills-item">
+                    <div class="icons"><i class="fa-brands fa-js fa-4x"></i></div>
+                    <h2>Java Script</h2>
+                    <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used
+                        as a part of web pages, whose implementations allow client-side script to interact with the user
+                        and make dynamic pages. It is an interpreted programming language with object-oriented
+                        capabilities.</p>
+                </div>
+                <div class="skills-item">
+                    <div class="icons"><i class="fa-solid fa-desktop fa-4x"></i></div>
+                    <h2>Web Design</h2>
+                    <p>Web designers plan, create and code internet sites and web pages, many of which combine text with
+                        sounds, pictures, graphics and video clips. A web designer is responsible for creating the
+                        design and layout of a website or web pages. It and can mean working on a brand new website or
+                        updating an already existing site.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <nav>
-            <div id="left_footer">
-                <a href="copyright.html">copyright</a>
-            </div>
-            <div id="right_footer">
-                <a href="privacy_notice.html">privacy notice</a>
-                |
-                <a href="terms_and_conditions.html">terms and conditions</a>
-            </div>
-        </nav>
+        <ul class="nav-footer fade-2-5">
+            <li> <a href="copyright.html">copyright</a></li>
+
+            <li><a href="privacy_notice.html">privacy notice</a></li>
+            <li><a href="terms_and_conditions.html">terms and conditions</a></li>
+        </ul>
     </footer>
+
+
+    <script src="index.js"></script>
+
 
 </body>

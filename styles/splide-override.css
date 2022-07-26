@@ -1,0 +1,7 @@
+main .splide__arrow svg {
+    fill: #999;
+}
+
+main .splide__pagination__page.is-active {
+    background: #999;
+}

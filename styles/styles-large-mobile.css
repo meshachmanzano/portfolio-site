@@ -1,0 +1,5 @@
+@media (min-width: 540px) {
+    .image-wrapper {
+        min-height: 70vh;
+    }
+}

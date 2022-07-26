@@ -1,67 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <title>About</title>
+    <title>Meshach's Portfolio</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mobile.css">
+    <link rel="stylesheet" href="styles/styles-large-mobile.css">
+    <link rel="stylesheet" href="styles/styles-tablet.css">
+    <link rel="stylesheet" href="styles/styles-laptop.css">
+    <link rel="stylesheet" href="styles/styles-desktop.css">
 </head>
 
-
 <body>
+    <div class="blur-zone"></div>
     <header>
         <nav>
-            <div id="left_header">
-
-                <h1>About</h1>
+            <div class="left-header fade-2-5">
+                <a href="indexccsframework.html"><img src="img/mlogo.jpeg" alt="meshach" id="logo"></a>
             </div>
-            <div id="header_links">
-                <a href="FAQs.html">questions</a>
-                |
-                <a href="qualifications.html">qualifications</a>
-                |
-                <a href="contactinfo.html">contact</a>
-                |
-                <a href="indexccsframework.html">portfolio</a>
-                |
-                <a href="hobbies.html">hobbies</a>
+            <div class="hamburger-parent">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <input type="checkbox" class="menu-switch">
+            <div class="header_links">
+                <ul class="nav-header fade-2-5">
+                    <li><a href="about.html" class="burger-font-size">about</a></li>
+                    <li><a href="FAQs.html" class="burger-font-size">questions</a></li>
+                    <li><a href="qualifications.html" class="burger-font-size">qualifications</a></li>
+                    <li><a href="contactinfo.html" class="burger-font-size">contact</a></li>
+                    <li><a href="hobbies.html" class="burger-font-size">hobbies</a></li>
+                </ul>
+
             </div>
 
         </nav>
     </header>
-<main>
-    <div class="flex">
-        <div class="flex-6">
-            <h2>About Me</h2>
-            <p>I am a confident, reliable and trustworthy person who
-                is willing/able to work hard. I have good communication skills due
-                to the number of years I have studied drama, a subject that
-                forces you to have good delivery and confidence in speech.
-                I am always eager to gain more experience and learn new skills.</p>
-            <h2>Education and Experience:</h2>
-            <ul>
-                <li>Capital City Academy</li>
-                <li>William Morris Sixth Form</li>
-                <li>St Mary's University</li>
-                <li>Middlesex University</li>
-            </ul>
-        </div>
-    </div>
-</main>
-   <footer>
-    <nav>
-        <div id="left_footer">
-            <a href="copyright.html">copyright</a>
-        </div>
-        <div id="right_footer">
-            <a href="privacy_notice.html">privacy notice</a>
-            |
-            <a href="terms_and_conditions.html">terms and conditions</a>
-        </div>
-    </nav>
-   </footer>
+    <main id="about">
+        <div class="about-container">
+            <div>
+                <h1 class="mycv-2 about-header">About Me</h1>
+            </div>
+            <div class="about-sections-1">
+                <div>
+                    <p>I am a confident, reliable and trustworthy person who
+                        is willing/able to work hard. I have good communication skills due
+                        to the number of years I have studied drama, a subject that
+                        forces you to have good delivery and confidence in speech.
+                        I am always eager to gain more experience and learn new skills. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Deserunt nulla enim iure reiciendis
+                        quae quasi repellat inventore magni recusandae exercitationem dolores modi dolore repudiandae,
+                        autem labore explicabo ipsa, itaque tenetur.</p>
+                </div>
+                <div class="about-img"><img src="img/mesh.jpg.jpg" alt="meshach manzano"></div>
+            </div>
+
+    </main>
+
+
+
+    <footer>
+        <ul class="nav-footer fade-2-5">
+            <li> <a href="copyright.html">copyright</a></li>
+
+            <li><a href="privacy_notice.html">privacy notice</a></li>
+            <li><a href="terms_and_conditions.html">terms and conditions</a></li>
+        </ul>
+    </footer>
+
+
+    <script src="index.js"></script>
+
 
 </body>
