@@ -57,36 +57,69 @@
                 <h1>Skills</h1>
             </div>
             <div class="skills-bottom">
-                <div class="skills-item">
-                    <div class="icons"><i class="fa-brands fa-html5 fa-4x"></i></div>
-                    <h2>HTML</h2>
-                    <p>HTML, in full hypertext markup language, a formatting system for displaying material retrieved
-                        over the Internet. Each retrieval unit is known as a Web page (from World Wide Web), and such
-                        pages frequently contain hypertext links that allow related pages to be retrieved.</p>
+                <div class="skils-container">
+                    <div class="skils-left">
+                        <div class="skils-item skills-background font-medium" style="--bg-image: url(../img/html.jpg)">
+                            <i class="fa-brands fa-html5 fa-4x"></i>
+                            <h2>HTML</h2>
+                            <p>HTML, in full hypertext markup language, a formatting system for displaying material
+                                retrieved
+                                over the Internet. Each retrieval unit is known as a Web page (from World Wide Web), and
+                                such
+                                pages frequently contain hypertext links that allow related pages to be retrieved.</p>
+                        </div>
+                    </div>
+                    <div class="skils-right block-md skills-html"></div>
                 </div>
-                <div class="skills-item">
-                    <div class="icons"><i class="fa-brands fa-css3-alt fa-4x"></i></div>
-                    <h2>CSS</h2>
-                    <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and
-                        fonts. It allows one to adapt the presentation to different types of devices, such as large
-                        screens, small screens, or printers. CSS is independent of HTML and can be used with any
-                        XML-based markup language.</p>
+                <div class="skils-container">
+                    <div class="skils-left">
+                        <div class="skils-item skills-background font-medium" style="--bg-image: url(../img/css.jpg)">
+                            <i class="fa-brands fa-css3-alt fa-4x"></i>
+                            <h2>CSS</h2>
+                            <p>CSS is the language for describing the presentation of Web pages, including colors,
+                                layout, and
+                                fonts. It allows one to adapt the presentation to different types of devices, such as
+                                large
+                                screens, small screens, or printers. CSS is independent of HTML and can be used with any
+                                XML-based markup language.</p>
+                        </div>
+                    </div>
+                    <div class="skils-right block-md skills-css"></div>
                 </div>
-                <div class="skills-item">
-                    <div class="icons"><i class="fa-brands fa-js fa-4x"></i></div>
-                    <h2>Java Script</h2>
-                    <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used
-                        as a part of web pages, whose implementations allow client-side script to interact with the user
-                        and make dynamic pages. It is an interpreted programming language with object-oriented
-                        capabilities.</p>
+
+                <div class="skils-container">
+                    <div class="skils-left">
+                        <div class="skils-item skills-background font-medium"
+                            style="--bg-image: url(../img/javascript.jpg)">
+                            <i class="fa-brands fa-js fa-4x"></i>
+                            <h2>Java Script</h2>
+                            <p>JavaScript is a dynamic computer programming language. It is lightweight and most
+                                commonly used
+                                as a part of web pages, whose implementations allow client-side script to interact with
+                                the user
+                                and make dynamic pages. It is an interpreted programming language with object-oriented
+                                capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="skils-right block-md skills-js"></div>
                 </div>
-                <div class="skills-item">
-                    <div class="icons"><i class="fa-solid fa-desktop fa-4x"></i></div>
-                    <h2>Web Design</h2>
-                    <p>Web designers plan, create and code internet sites and web pages, many of which combine text with
-                        sounds, pictures, graphics and video clips. A web designer is responsible for creating the
-                        design and layout of a website or web pages. It and can mean working on a brand new website or
-                        updating an already existing site.</p>
+
+                <div class="skils-container">
+                    <div class="skils-left">
+                        <div class="skils-item skills-background font-medium"
+                            style="--bg-image: url(../img/wed-design.jpg)">
+                            <i class="fa-solid fa-desktop fa-4x"></i>
+                            <h2>Web Design</h2>
+                            <p>Web designers plan, create and code internet sites and web pages, many of which combine
+                                text with
+                                sounds, pictures, graphics and video clips. A web designer is responsible for creating
+                                the
+                                design and layout of a website or web pages. It and can mean working on a brand new
+                                website or
+                                updating an already existing site.</p>
+                        </div>
+                    </div>
+                    <div class="skils-right block-md skills-wd"></div>
                 </div>
             </div>
         </div>
@@ -102,7 +135,17 @@
     </footer>
 
 
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        [...(document.querySelectorAll(".skils-right"))].forEach(function (e) {
+            e.addEventListener("click", function () {
+                this.classList.toggle("z-index-1000")
+                if(this.classList.contains("z-index-1000"))
+                    this.classList.remove("transition-1")
+                else this.classList.add("transition-1")
+            })
+        })
+    </script>
 
 
 </body>

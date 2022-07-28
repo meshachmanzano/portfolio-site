@@ -31,10 +31,12 @@
 
     .font-md-medium {
         font-size: 1.3rem;
+        font-family: 'Raleway', sans-serif;
     }
     
     .font-md-title {
         font-size: 6rem;
+        font-family: 'IBM Plex Mono', monospace;
     }
 
     .mycv-md-1 {
@@ -71,5 +73,24 @@
 
     .myphoto-cv {
         min-height: calc(100vh - 13rem);
+    }
+
+    .grid-md-2 {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+    }
+
+    .block-md {
+        display: block;
+    }
+
+    .skils-left {
+        width: 50%;
+        margin-right: -200px;
+    }
+
+    .skills-background {
+        background: #112240;
     }
 }

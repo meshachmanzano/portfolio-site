@@ -109,10 +109,12 @@ ul.nav-header {
 
 .font-medium {
     font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .font-title {
     font-size: 4rem;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .grid-container {
@@ -170,4 +172,26 @@ footer li {
 
 #contact .contact-info h2 {
     font-size: 15px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.block-md {
+    display: none;
+}
+
+.skils-left {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.skills-background {
+    background: var(--bg-image) center center / cover no-repeat;
 }
