@@ -192,6 +192,10 @@ footer li {
     z-index: 1;
 }
 
-.skills-background {
+.skills-background, .about-background {
     background: var(--bg-image) center center / cover no-repeat;
+}
+
+.quote-container {
+    width: 80vw;
 }

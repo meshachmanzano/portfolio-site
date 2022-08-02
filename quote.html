@@ -15,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;700&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles-mobile.css">
     <link rel="stylesheet" href="styles/styles-large-mobile.css">
@@ -50,25 +55,14 @@
 
         </nav>
     </header>
-    <main id="about">
-        <div class="about-container">
-            <div class="font-title font-md-title font-lg-title font-xl-title">
-                <h1 class="mycv-2 about-header">About Me</h1>
+    <main class="quote-body">
+        <div class="quote-container">
+            <div class="quote-header">Quote Of The Day</div>
+            <div class="quote-content">
+                <div class="quote-text">A winner is a dreamer who never gives up.</div>
+                <div class="quote-author">Nelson Mandela</div>
             </div>
-            <div class="grid-1 grid-md-2 grid-stretch">
-                <div class="font-medium font-md-medium font-lg-medium">
-                    <p>I am a confident, reliable and trustworthy person who
-                        is willing/able to work hard. I have good communication skills due
-                        to the number of years I have studied drama, a subject that
-                        forces you to have good delivery and confidence in speech.
-                        I am always eager to gain more experience and learn new skills. Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Deserunt nulla enim iure reiciendis
-                        quae quasi repellat inventore magni recusandae exercitationem dolores modi dolore repudiandae,
-                        autem labore explicabo ipsa, itaque tenetur.</p>
-                </div>
-                <div class="about-img about-background" style="--bg-image: url(../img/mesh.jpg.jpg)"></div>
-            </div>
-
+        </div>
     </main>
 
 
@@ -85,8 +79,36 @@
 
     <script src="js/index.js"></script>
     <script>
-        images=["img/water.jpg","img/mesh.jpg.jpg","img/leaf.jpg"]
-        document.querySelector(".about-background").setAttribute("style", "--bg-image: url(../"+getRandomImage(images)+")")
+        const quotes = [{
+            text: "A winner is a dreamer who never gives up.", author: "Nelson Mandela"
+        }, {
+            text: "Computers themselves, and software yet to be developed, will revolutionize the way we learn.", author: "Steve Jobs"
+        }, {
+            text: "Simplicity is the soul of efficiency.", author: "Austin Freeman"
+        }, {
+            text: "I've missed more than 9,000 shots in my career. I've lost almost 300 games. Twenty-six times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed.", author: "Michael Jordan"
+        }, {
+            text: "May you always remember to enjoy the road, especially when it’s a hard one.", author: "Kobe Bryant"
+        }, {
+            text: "Stay in your self respect and give respect.", author: "Dadi Janki"
+        }, {
+            text: "Anyone who lives within their means suffers from a lack of imagination.", author: "Oscar Wilde"
+        }, {
+            text: "I say luck is when an opportunity comes along and you're prepared for it.", author: "Denzel Washington"
+        }, {
+            text: "The time is always right to do what is right.", author: "Martin Luther King Jr."
+        }, {
+            text: "We're changing the world with technology.", author: "Bill Gates"
+        }]
+
+        const quote = quotes[Math.floor(Math.random() * quotes.length)]
+
+        console.log(quote)
+
+        document.querySelector(".quote-text").textContent = quote.text
+        document.querySelector(".quote-author").textContent = quote.author
+
+
     </script>
 
 

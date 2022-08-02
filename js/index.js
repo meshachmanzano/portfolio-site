@@ -9,12 +9,12 @@ menuswitch.addEventListener("change", function () {
         blur.style.display = "none"
 })
 
-const hobbies=[...document.querySelectorAll("h1[data-hobby]")]
+const hobbies = [...document.querySelectorAll("h1[data-hobby]")]
 hobbies.map(function (e) {
     e.addEventListener("click", function () {
-        (e.nextElementSibling) .classList.toggle("show-section")
+        (e.nextElementSibling).classList.toggle("show-section")
     })
-    
+
 })
 
 
@@ -30,4 +30,8 @@ for (i = 0; i < faq.length; i++) {
             body.style.display = "block";
         }
     });
+}
+
+function getRandomImage(images) {
+    return images[Math.floor(Math.random() * images.length)]
 }

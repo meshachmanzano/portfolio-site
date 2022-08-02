@@ -257,6 +257,10 @@ footer a {
     margin: 0 auto;
 }
 
+.grid-stretch {
+    min-height: calc(100vh - 15rem);
+}
+
 
 
 
@@ -408,6 +412,14 @@ footer a {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-bottom: 5px;
+}
+
+#contact .contact-info a {
+    color: grey;
+}
+
+#contact .contact-info a:hover {
+    text-decoration: underline;
 }
 
 #skills .skills {
@@ -677,4 +689,46 @@ footer a {
 .transition-1 {
     transform: scale(1);
     transition: transform 1s ease-in-out;
+}
+
+.quote-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 10rem);;
+}
+
+.quote-container {
+    height: auto;
+    background-color: #112240;
+    border-radius: 8px;
+    padding: 30px 30px 25px;
+    box-shadow: 0 0 18px 0 #08fdd8;
+}
+
+.quote-header {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #ffff;
+}
+
+.quote-container .quote-content {
+    margin: 35px 0;
+    font-size: 1.5rem;
+}
+
+.quote-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: #00bfff;
+}
+
+.quote-author {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Open Sans', sans-serif;
+    color: #08fdd8;
 }

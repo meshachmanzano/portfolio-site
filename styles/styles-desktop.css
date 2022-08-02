@@ -14,4 +14,8 @@
         font-size: 11rem;
         font-family: 'IBM Plex Mono', monospace;
     }
+
+    .quote-container {
+        width: 70vw;
+    }
 }
