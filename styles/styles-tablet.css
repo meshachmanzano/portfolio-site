@@ -45,6 +45,14 @@
         color: white;
     }
 
+    .mycv-3 {
+        font-size: 1.6rem;
+    }
+
+    .myphoto>.image-wrapper {
+        height: calc(100vh - 11rem);
+    }
+   
     #left_footer {
         padding: 0 0 0 70px;
     }
@@ -52,12 +60,27 @@
     .nav-footer {
         display: flex;
         justify-content: space-around;
-        margin: 10px 0;
-        padding: 20px 0;
+        height: 5rem;
+        align-items: center;
+        padding-top: 0;
     }
+
+    .image-wrapper {
+        background: url("../img/mesh.jpg.jpg") center center / cover no-repeat;
+    
+    }
+
 
     #contact .contact-item {
         width: 84%;
+    }
+
+    #about h1 {
+        font-size: 6rem;
+    }
+    
+    #about p {
+        font-size: 1.4rem;
     }
 
     
@@ -71,9 +94,6 @@
         font-size: 25px;
     }
 
-    .myphoto-cv {
-        min-height: calc(100vh - 13rem);
-    }
 
     .grid-md-2 {
         display: grid;
@@ -92,5 +112,17 @@
 
     .skills-background {
         background: #112240;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .faq-container h1 {
+        font-size: 30px;
+    }
+
+    .faq-container p {
+        font-size: 18px;
     }
 }

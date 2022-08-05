@@ -72,17 +72,16 @@ ul.nav-header {
 }
 
 
-.image-wrapper {
-    min-height: 50vh;
-}
-
 .flex-intro {
     position: absolute;
     height: 100vh;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: #0a102f;
+    z-index: 1000;
+    opacity: 0;
 }
 
 .flex-12 {
@@ -113,7 +112,7 @@ ul.nav-header {
 }
 
 .font-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -155,13 +154,17 @@ footer li {
     padding-bottom: 20px;
 }
 
+
+.image-wrapper {
+    background: url(../img/mesh.jpg.jpg) center -7rem / cover no-repeat;
+}
+
 .nav-footer {
     list-style-type: none;
     display: block;
     text-align: center;
-    margin: 20px 0;
-    padding: 20px 0;
-
+    height: 5rem;
+    padding-top: 2rem;
 }
 
 .hobby-font {
@@ -198,4 +201,20 @@ footer li {
 
 .quote-container {
     width: 80vw;
+}
+
+#about h1 {
+    font-size: 4rem;
+}
+
+#about p {
+    font-size: 1rem;
+}
+
+.faq-container h1 {
+    font-size: 20px;
+}
+
+.faq-container p {
+    font-size: 12px;
 }

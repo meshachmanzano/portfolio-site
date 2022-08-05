@@ -1,13 +1,16 @@
 @media (min-width: 1440px) {
 
+    .container {
+        max-width: 1200px;
+    }
 
     footer li a,
     header li a {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .burger-font-size {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .font-xl-title {
@@ -15,7 +18,28 @@
         font-family: 'IBM Plex Mono', monospace;
     }
 
+    .mycv-3 {
+        font-size: 2.5rem;
+    }
+
     .quote-container {
         width: 70vw;
     }
+
+    #about h1 {
+        font-size: 7rem;
+    }
+
+    #about p {
+        font-size: 2rem;
+    }
+
+    .faq-container h1 {
+        font-size: 35px;
+    }
+
+    .faq-container p {
+        font-size: 20px;
+    }
+
 }
