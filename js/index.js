@@ -26,5 +26,9 @@ function showOnceAndNeverAgain(selector) {
     if (!window.localStorage.getItem(selector)) {
         document.querySelector(selector).style.display = "flex"
         window.localStorage.setItem(selector, true)
+        setTimeout(function(){
+            document.querySelector(selector).style.display = "none"
+        }, 1000)
     }
+
 }
