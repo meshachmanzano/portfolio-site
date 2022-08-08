@@ -399,6 +399,14 @@ footer a {
     margin-left: -1em;
 }
 
+li .splide__pagination__page.is-active {
+    background: #ff8100;
+}
+
+button.splide__arrow>svg, button.splide__arrow:hover:not(:disabled) svg {
+    fill: #ff8100;
+}
+
 .show-section {
     max-height: 300px;
     animation: fadeIn 0.8s ease-in;
