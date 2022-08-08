@@ -393,7 +393,7 @@ footer a {
 
 .hidden-section li::before {
     content: "\2022";
-    color: #00bfff;
+    color: #ff8100;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
