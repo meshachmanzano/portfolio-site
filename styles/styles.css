@@ -28,6 +28,13 @@ body {
 
 .header_links a {
     color: #08fdd8;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.5s linear 0s;
+    padding-bottom: 5px;
+}
+
+.header_links a:hover {
+    border-bottom: 3px solid #08fdd8;
 }
 
 header {
@@ -98,7 +105,8 @@ nav {
     display: block;
 }
 
-a {
+a,
+footer li {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 1em;
     text-decoration: none;
@@ -165,7 +173,8 @@ footer {
     color: white;
 }
 
-footer a {
+footer a,
+footer li {
     color: #08fdd8;
 }
 
@@ -289,7 +298,7 @@ footer a {
     height: 100%;
     width: 0;
     background-color: #08fdd8;
-    animation: overlay-text 1s ease forwards;
+    animation: overlay-text 0.4s ease forwards;
 }
 
 #about .about-content .line-1 span {
@@ -299,7 +308,7 @@ footer a {
     height: 100%;
     width: 0;
     background-color: #00bfff;
-    animation: overlay-text 2s ease forwards;
+    animation: overlay-text 0.8s ease forwards;
 }
 
 #about .about-content .line-2 span {
@@ -309,7 +318,7 @@ footer a {
     height: 100%;
     width: 0;
     background-color: #112240;
-    animation: overlay-text 3s ease forwards;
+    animation: overlay-text 1.2s ease forwards;
 }
 
 #about .about-content .line-3 span {
@@ -319,7 +328,7 @@ footer a {
     height: 100%;
     width: 0;
     background-color: #0a102f;
-    animation: overlay-text 4s ease forwards;
+    animation: overlay-text 1.6s ease forwards;
 }
 
 #about .about-content .line-4 span {
@@ -329,7 +338,7 @@ footer a {
     height: 100%;
     width: 0;
     background-color: #08fdd8;
-    animation: overlay-text 5s ease forwards;
+    animation: overlay-text 2s ease forwards;
 }
 
 #about .about-content .line-5 span {
@@ -339,7 +348,7 @@ footer a {
     height: 100%;
     width: 0;
     background-color: #00bfff;
-    animation: overlay-text 6s ease forwards;
+    animation: overlay-text 2.4s ease forwards;
 }
 
 @keyframes overlay-text {
@@ -404,7 +413,8 @@ li .splide__pagination__page.is-active {
     background: #ff8100;
 }
 
-button.splide__arrow>svg, button.splide__arrow:hover:not(:disabled) svg {
+button.splide__arrow>svg,
+button.splide__arrow:hover:not(:disabled) svg {
     fill: #ff8100;
 }
 
@@ -660,15 +670,49 @@ button.splide__arrow>svg, button.splide__arrow:hover:not(:disabled) svg {
     background-color: #112240;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 1s ease-in-out;
     padding-bottom: 0;
-    transition: padding-bottom 1s ease-in-out;
+
+}
+
+.faq-body>p {
+    margin-bottom: 15px;
 }
 
 .faq-body-show {
+    animation: faq-animation-show 1s linear;
     max-height: 40vh;
-    padding-bottom: 20px;
 }
+
+.faq-body-hide {
+    animation: faq-animation-hide 1s ease-out;
+
+}
+
+@keyframes faq-animation-show {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 40vh;
+    }
+}
+
+@keyframes faq-animation-hide {
+    0% {
+        max-height: 40vh;
+    }
+
+    5% {
+        max-height: 20vh;
+    }
+
+    100% {
+        max-height: 0;
+    }
+}
+
+
 
 .faq-page:after {
     content: '\02795';

@@ -5,7 +5,8 @@
     }
 
     footer li a,
-    header li a {
+    header li a,
+    footer li {
         font-size: 1.2rem;
     }
 
